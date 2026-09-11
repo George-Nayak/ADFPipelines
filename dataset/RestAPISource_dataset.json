@@ -1,0 +1,13 @@
+{
+	"name": "RestAPISource_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestAPI_poke_linkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

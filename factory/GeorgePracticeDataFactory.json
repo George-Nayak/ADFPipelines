@@ -1,0 +1,15 @@
+{
+	"name": "GeorgePracticeDataFactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6a5c47a9-d115-4802-ad19-1b7ca3e8326f",
+		"tenantId": "32b583f2-11a4-455a-ad26-5c8bd5da57ca"
+	}
+}
