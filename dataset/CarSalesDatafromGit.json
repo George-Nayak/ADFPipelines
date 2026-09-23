@@ -1,0 +1,30 @@
+{
+	"name": "CarSalesDatafromGit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azuregitlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"load_table_flag": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "/George-Nayak/ADF-Resources/refs/heads/main/RawData/@{dataset().load_table_flag}",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
